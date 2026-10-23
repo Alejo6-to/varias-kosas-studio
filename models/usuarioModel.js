@@ -5,7 +5,7 @@
 const usuarios =[
 
 {
-    nombre_completo :"Kevyn Torres",
+    nombre:"Kevyn Torres",
     telefono: "3142570994",
     correo:"kkevingutierrezz99gmail.com",
     contrasenas:"123456",
@@ -15,7 +15,7 @@ const usuarios =[
 
 
 {
-    nombre_completo :"Angela Torres",
+    nombre:"Angela Torres",
     telefono: "3213426301",
     correo:"anegelito@gmail.com",
     contrasenas:"123",
@@ -30,7 +30,7 @@ export function guardarUsuario(){
 
 export function buscarUsuario(correo , contrasenas){
 
-   let auth = usuarios.some((usuario)=>correo == usuario.correo && contrasenas == usuario.contrasenas)
+   let auth = usuarios.find((usuario)=>correo == usuario.correo && contrasenas == usuario.contrasenas)
    return auth 
   
 }

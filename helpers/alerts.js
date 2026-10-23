@@ -6,3 +6,4 @@ export function generalAlerta(title, text, icon) {
 });
 }
 
+
